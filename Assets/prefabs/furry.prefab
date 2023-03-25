@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3048044220457803479}
   - component: {fileID: 3048044220457803472}
   - component: {fileID: 3502624324088828050}
+  - component: {fileID: 409940017285513737}
   m_Layer: 0
   m_Name: furry
   m_TagString: Untagged
@@ -96,6 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd315e04826774b20a301c7ec042e64e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 3
+  maxHealth: 5
+  projectilePrefab: {fileID: 1219989925189816698, guid: 764442ab8f77e4d83b4412e5b6878e8b, type: 3}
+  timeInvincible: 2
 --- !u!61 &3502624324088828050
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -122,3 +127,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.38933855, y: 0.41401166}
   m_EdgeRadius: 0
+--- !u!95 &409940017285513737
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3048044220457803473}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b77822e0485373d40b5beb92e9a5e728, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
